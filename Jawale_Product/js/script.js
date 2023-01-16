@@ -60,7 +60,7 @@ let currentImg;
 setInterval(function () {}, 1000);
 
 
-createImage('./images/papd.png')
+createImage('./images/bibde.jpg')
   .then(img => {
     currentImg = img;
     console.log('Image 1 loaded');
@@ -68,7 +68,7 @@ createImage('./images/papd.png')
     // return wait(2);
     //After the 2 seconds have passed,
   })
-  // .then(() => {
+  // .then(() => {s
   //   //hide the current image (set display to 'none'),
   //   currentImg.style.display = 'none';
   //   return createImage('./images/kurdai2.png');
