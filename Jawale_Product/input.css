@@ -2,12 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+.home{
+  
+}
+
+#clock{
+  top:0px;
+  margin-right:12px;
+
+
+}
 #cta {
   background-image: url('../images/bg-boost-desktop.svg');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.ficon{
+width:48px;
+height:48px;
+}
 .ficon:hover {
   filter: invert(79%) sepia(61%) saturate(464%) hue-rotate(130deg)
     brightness(89%) contrast(85%);

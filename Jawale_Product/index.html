@@ -22,23 +22,24 @@
   </head>
   <body>
     <!-- Navbar Container -->
-    <nav class="relative container mx-auto p-6">
-      <!-- Flex Container -->
+
+    <nav class="relative container mx-auto p-6" id="nav">
+     <!-- Flex Container -->
       <div class="flex items-center justify-between">
         <!-- Flex Container For Logo/Menu -->
         <div class="flex items-center space-x-20">
           <!-- Logo -->
           <!-- <img src="images/logo.svg" alt="" /> -->
-          <h1 class="home text-3xl">Jawale Product</h1>
+          <h1 class="home text-2xl md:text-3xl py-2 px-2 my-2 mx-2 font-medium rounded-xl italic text-fuchsia-800 bg-slate-300">Jawale Product</h1>
           <!-- Left Menu -->
           <div class="hidden lg:flex space-x-8 font-bold">
-            <a href="#features" class="text-grayishViolet hover:text-veryDarkViolet"
+            <a href="#features" class="text-gray hover:text-fuchsia-700 hover:bg-slate-200 py-2 px-2 my-2 mx-2 rounded-xl"
               >Features</a
             >
-            <a href="#hero" class="text-grayishViolet hover:text-veryDarkViolet"
+            <a href="#product" class="product text-gray hover:text-fuchsia-700 hover:bg-slate-200 py-2 px-2 my-2 mx-2 rounded-xl"
               >Products</a
             >
-            <a href="#abt" class="openAbout text-grayishViolet hover:text-veryDarkViolet"
+            <a href="#abt" class="openAbout text-gray hover:text-fuchsia-700 hover:bg-slate-200 py-2 px-2 my-2 mx-2 rounded-xl"
               >About</a
             >
             
@@ -50,7 +51,7 @@
         >
           <a
             href="#cta" 
-            class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70"
+            class="px-8 py-3 font-bold text-white bg-cyan hover:bg-slate-200 rounded-full hover:opacity-70 hover:text-fuchsia-800 hover:border-4 hover:border-fuchsia-800 hover:text-xl"
             >Contact Us</a
           >
         </div>
@@ -75,9 +76,9 @@
       <div
         class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
       >
-        <a href="#features" class="w-full text-center">Features</a>
-        <a href="#hero" class="w-full text-center">Products</a>
-        <a href="#abt" class="w-full text-center">About</a>
+        <a href="#features" class="w-full text-center  hover:text-fuchsia-500">Features</a>
+        <a href="#product" class="product w-full text-center  hover:text-fuchsia-500">Products</a>
+        <a href="#abt" class="w-full text-center hover:text-fuchsia-500">About</a>
        
      
         <a href="tel:9766603565" class="w-full py-3 text-center rounded-full bg-cyan">
@@ -85,17 +86,19 @@
         </a>
 
       </div>
-    </nav>
+      </div>
+   </nav>
+
 
 
     <!-- Hero Section -->
-    <section id="hero" class="md:pl-10 md:pr-10">
+    <section id="hero" class="md:pl-10 md:pr-10 border-b-2 border-b-slate-200 md:border-b-0">
       <!-- Hero Container -->
-      <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row">
+      <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row  pb-12">
         <!-- Content Container -->
-        <div class="flex flex-col space-y-10 mb-44 lg:mt-16 lg:w-1/2 xl-mb-52">
+        <div class="flex flex-col space-y-10 lg:mt-16 lg:w-1/2 xl-mb-52">
           <h1
-            class="text-3xl font-bold text-center lg:text-4xl lg:max-w-md lg:text-left font-italic"
+            class=" text-purple-700 text-3xl font-bold text-center lg:text-4xl lg:max-w-md lg:text-left font-italic opacity-70"
           >
            AUTHENTIC TASTE AND EXCITING EXPERIANCE
           </h1>
@@ -106,8 +109,9 @@
           </p>
           <div class="mx-auto lg:mx-0 flex items-center">
             <a
-              href=""
-              class="py-2 px-5 md:py-5 md:px-10 text-xl md:text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70"
+              href="#product"
+              class="showProduct py-2 px-5 md:py-5 md:px-10 text-xl md:text-2xl font-bold text-white bg-cyan rounded-full lg:py-4 hover:opacity-70 hover:text-fuchsia-800 hover:border-4 hover:border-fuchsia-800  hover:bg-gray-300"
+              
               >View Product</a
             >
           </div>
@@ -119,14 +123,131 @@
       </div>
     </section>
 
-   
+   <!-- Product section -->
+   <section id="product" class="md:pl-10 md:pr-10 border-b-2 border-b-slate-200 md:border-b-0">
+    <div class="container mx-auto p-6 text-center">
+      <div class="mb-12 lg:mt-16 xl-mb-28 text-purple-700">
+        <h1
+          class="text-3xl font-bold text-center lg:text-4xl font-italic opacity-70"
+        >
+         PRODUCTS
+        </h1>
+      
+        
+      </div>
+      <div class="px-4 md:px-12 mb-16 md:mb-0 md:pb-36 w-full mx-auto md:w-5/6">
+        <div class="shadow overflow-hidden rounded border-b border-gray-200">
+          <table class="min-w-full bg-white">
+            <thead class="bg-gray-800 text-white">
+              <tr>
+                <th class="w-1/5 md:w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">Sr No.</th>
+                <th class="w-2/6 md:w-2/6 text-left py-3 px-4 uppercase font-semibold text-sm">Menu</th>
+                <th class="w-1/4 md:w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">Qty</th>
+                <th class="w-1/4 md:w-1/6 text-left py-3 px-4 uppercase font-semibold text-sm">Price ₹</td>
+              </tr>
+            </thead>
+          <tbody class="text-gray-900 bg-fuchsia-100">
+            <tr class="bg-fuchsia-100">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">1</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">ज्वारी  खिशी पापड</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">800 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-50">
+              <td class=" w-1/5 md:w-1/6 text-left py-3 px-4">2</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">ज्वारी बिबळे</td>
+              <td class=" w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1000 ₹</a></td>
+            </tr>     
+            <tr class="bg-fuchsia-100">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">3</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">मकी  बिबळे</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1000 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-50">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">4</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">गहु चीक पापड</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">600 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-100">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">5</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">गहु कुरडई</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">600 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-50">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">6</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">बाजरी (कऱ्होळे)</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1 KG</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">600 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-100">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">7</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">कुरकुरे (गहु+टाेमॅटाे)</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1 KG</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">600 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-50">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">8</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">तांदुळ चकली</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1 KG</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">600 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-100">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">9</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">चिकनी पान</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1200 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-50">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">10</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">गहु  ज्वारी पान</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1000 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-100">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">11</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">दाळी कऱ्होळे</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1 KG</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">600 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-50">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">12</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">साबुदाना बिबडे</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">100</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">800 ₹</a></td>
+            </tr>
+            <tr class="bg-fuchsia-100">
+              <td class="w-1/5 md:w-1/6 text-left py-3 px-4">13</td>
+              <td class="w-2/6 md:w-2/6 text-left py-3 px-4">साबुदाना चकली</td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">1 KG</a></td>
+              <td class="w-1/4 md:w-1/6 text-left py-3 px-4"><a class="hover:text-blue-500">600 ₹</a></td>
+            </tr>
+     
+          </tbody>
+          </table>
+        </div>
+      </div>
+      
+    </div>
+   </section>
 
 
     <!-- Feature Box Section -->
-    <section id="features" class="pb-32 bg-gray-100">
+    <section id="features" class="pb-32 bg-gray-100 md:mt-0 border-b-2 border-b-slate-200 md:border-b-0">
+      <div class="py-12 text-purple-700">
+        <h1
+          class="text-3xl font-bold text-center lg:text-4xl font-italic opacity-70 "
+        >
+         FEATURES
+        </h1>
       
+        
+      </div>
       <div
-        class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7"
+        class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 pt-12"
       >
         <!-- Horizontal Line -->
         <div
@@ -207,12 +328,12 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="abt" class="md:pl-10 md:pr-10 py-10 md:py-0">
+    <section id="abt" class="md:pl-10 md:pr-10 py-10 md:py-0 border-b-2 border-b-slate-200 md:border-b-0">
       <div class="container mx-auto">
         <!-- Content Container -->
-        <div class="space-y-10 mb-24 lg:mt-16  xl-mb-28">
+        <div class="space-y-10 mb-8 lg:mt-16  xl-mb-28 text-purple-700">
           <h1
-            class="text-3xl font-bold text-center lg:text-4xl lg:text-left font-italic"
+            class="text-3xl font-bold text-center lg:text-4xl font-italic opacity-70"
           >
            About Us
           </h1>
@@ -223,7 +344,7 @@
            
             Today, we're proud to be the good Home made product Maker.
           
-            we are delivering services in Jalgaon,Mumbai,pune & nashik - to out customers.
+            we are delivering services in Jalgaon,Mumbai,pune & nashik - to our customers.
          
           </p>
           
@@ -234,94 +355,93 @@
   
     </section>
     <!-- CTA Section -->
-    <section id="cta" class="py-24 bg-darkViolet md:px-6 md:pl-10 md:pr-10">
+    <section id="cta" class="py-16 md:py-20 bg-darkViolet md:px-6 md:pl-10 md:pr-10">
       <div class="flex flex-col p-2 space-y-6">
         <h5
-          class="mx-auto space-y-10 text-4xl font-bold text-center text-cyan py-12"
+          class="mx-auto space-y-10 text-4xl font-bold text-center text-cyan py-12 opacity-70"
         >
           Get in touch with us for Delicious Product
         </h5>
-        <!-- <button
-          class="px-10 py-5 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-base md:py-3 focus:outline-none"
-        >
-        <a href="tel:9766603565">
-          Contact Us
-        </a>
-
-        </button> -->
+        
       
       </div>
       <div class="mx-auto  text-xl font-medium text-center text-white flex justify-around flex-col items-center px-6 md:flex-row md:space-x-7 ">
-        <div>
+        <div class="border-b-2 opacity-80 md:border-b-0">
           <ul>
             <li>Mr.Honaji Jawale</li>
             <li>Bhalod</li>
             <li>Mob No:-9403836432</li>
-            <li class="flex py-6">
+            <li class="flex py-4 items-center justify-center">
+              <a href="tel:9403836432">
+                <img src="images/call.png" alt="" class="ficon" />
+               </a>
+    
               <a  rel="nofollow" class="share-whatsapp ficon"  href="whatsapp://send?phone=7620335776" data-action="share/whatsapp/share" title="WhatsApp">           
                 <img src="images/whatsapp.svg" alt="" class="ficon" />
              </a>
-             <button
-             class="px-6 py-2 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-base md:py-2 focus:outline-none"
-           >
-           <a href="tel:9403836432">
-             Contact Us
-           </a>
-
+            
+          
              
             </li>
           </ul>
         </div>
-        <div class="py-4 md:py-0">
+        <div class="py-4 md:py-0 border-b-2 opacity-80 md:border-b-0 md:border-l-2 md:pl-20">
           <ul>
             <li>Mrs.Hemalata Jawale</li>
             <li>Jalgaon</li>
             <li>Mob No:-9923294232</li>
-            <li class="flex py-6">
+            <li class="flex py-4 items-center justify-center">
+              <a href="tel:9923294232">
+                <img src="images/call.png" alt="" class="ficon" />
+               </a>
               <a  rel="nofollow" class="share-whatsapp ficon"  href="whatsapp://send?phone=9923294232" data-action="share/whatsapp/share" title="WhatsApp">           
                 <img src="images/whatsapp.svg" alt="" class="ficon" />
              </a>
-             <button
-             class="px-6 py-2 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-base md:py-2 focus:outline-none"
-           >
-           <a href="tel:9923294232">
-             Contact Us
-           </a>
+           
+         
             </li>
            
           </ul>
         </div>
-        <div class="py-4 md:py-0">
+        <div class="py-4 md:py-0 border-b-2 opacity-80 md:border-b-0 md:border-l-2 md:pl-20">
           <ul>
             <li>Lokesh Jawale</li>
             <li>Pune</li>
             <li>Mob No:-9766603565</li>
-            <li class="flex py-6">
-              <a  rel="nofollow" class="share-whatsapp ficon"  href="whatsapp://send?phone=9766603565" data-action="share/whatsapp/share" title="WhatsApp">           
-                <img src="images/whatsapp.svg" alt="" class="ficon" />
-             </a>
-             <button
-             class="px-6 py-2 mx-auto text-2xl font-bold text-white rounded-full bg-cyan hover:bg-cyanLlight md:text-base md:py-2 focus:outline-none"
-           >
-           <a href="tel:9766603565">
-             Contact Us
-           </a>
-            </li>
+            <li class="flex py-4 items-center justify-center">
+              <a href="tel:9766603565">
+                <img src="images/call.png" alt="" class="ficon" />           </a>
+                <a  rel="nofollow" class="share-whatsapp ficon"  href="whatsapp://send?phone=9766603565" data-action="share/whatsapp/share" title="WhatsApp">           
+                  <img src="images/whatsapp.svg" alt="" class="ficon" />
+               </a>
+                </li>
+              
+           
+          
 
           </ul>
         </div>
      </div>
+     <div
+     class="space-x-6 font-bold text-grayishViolet lg:flex flex items-center justify-center text-center pt-8"
+   >
+     <a
+       href="" 
+       class="px-6 py-2 md:px-8 md:py-4 text-xl font-bold text-white bg-cyan hover:bg-slate-200 rounded-full hover:opacity-70 hover:text-slate-900"
+       >Contact Us</a
+     >
+   </div>
     </section>
 
 
 
     <!-- Footer section -->
-    <footer class="py-4 pt-12 bg-veryDarkViolet md:px-6 md:pl-10 md:pr-10">
+    <footer class="py-4 pt-12 bg-veryDarkViolet md:px-6 md:pl-10 md:pr-10 relative">
       <div
         class="container flex flex-col items-center justify-between mx-auto space-y-12 md:flex-row md:space-y-0 md:items-start"
       >
         <!-- Logo -->
-        <h1 class="text-3xl text-white">Jawale Product</h1>
+        <h1 class="text-3xl text-white hover:bg-white hover:text-slate-800 rounded-xl mx-2 my-2 px-2 py-2 "><a href="#nav">Jawale Product</a></h1>
 
         <!-- Menus Container -->
         <div
@@ -340,7 +460,7 @@
 
           <!-- Menu 2 -->
           <div class="flex flex-col items-center md:items-start">
-            <a href="#hero" class="text-grayishViolet hover:text-white mb-5 font-bold capitalize"
+            <a href="#product" class="product text-grayishViolet hover:text-white mb-5 font-bold capitalize"
             >Products</a
           >
            
@@ -366,7 +486,12 @@
           </a> 
         </div>
       </div>
-      <P class="text-white text-center text-sm pt-6 md:pt-0">COPYRIGHT @2023 Lokesh Jawale - All rights reserved</P>
+      
+        <P class="text-white text-center text-sm pt-6 md:pt-0">COPYRIGHT @2023 Lokesh Jawale - All rights reserved</P>
+        
+      
+      <div id = "clock" class="mx-auto text-white text-center py-4 md:pb-2 absoulte top-0 right-0" onload="currentTime()"></div>
+
     </footer>
 
 

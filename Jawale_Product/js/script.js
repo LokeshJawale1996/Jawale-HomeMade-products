@@ -2,18 +2,16 @@
 
 
 const btn = document.getElementById('menu-btn')
-const home = document.querySelector('.home');
 const menu = document.getElementById('menu')
 const imgContainer = document.querySelector('.images');
 const aboutClick = document.querySelector('.openAbout');
-const about = document.getElementById('about');
-const heroCont = document.getElementById('hero');
-const statsCont = document.getElementById('stats');
-const ctaCont = document.getElementById('cta');
-const fetauresCont = document.getElementById('features')
-
-
-
+const abt = document.getElementById('abt');
+const hero = document.getElementById('hero');
+const cta = document.getElementById('cta');
+const features = document.getElementById('features')
+const productSec = document.getElementById('product');
+const product = document.querySelector('.product');
+const showProduct = document.querySelector('showProduct')
 // const images = ['./images/papd.png','./images/kurdai2.png','./images/papd2.png'];
 // Toggle Mobile Menu
 function navToggle() {
@@ -116,5 +114,53 @@ createImage('./images/bibde.jpg')
    
 
 // });
+function currentTime(){
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
 
+  if(hh === 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+
+
+  }
+currentTime()
+
+
+
+// product page
+// function navToggle2() {
+//   productSec.classList.toggle('open')
+//   productSec.classList.toggle('hidden')
+// }
+// showProduct.addEventListener('click', navToggle2)
+
+// showProduct.addEventListener('click',function(){
+
+//   if(productSec.classList.contains('hidden')){
+//     productSec.classList.remove('hidden');
+    
+//   }else{
+//     productSec.classList.add('hidden');
+   
+
+//   }
  
+  
+// })
