@@ -18,19 +18,26 @@
     <script src="js/script.js" defer></script>
     
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <title>Jawale Product</title>
   </head>
   <body>
-    <!-- Navbar Container -->
-
-    <nav class="relative container mx-auto p-6" id="nav">
+    <!-- 1 Navbar Container -->
+   <nav class="relative container mx-auto p-6" id="nav">
      <!-- Flex Container -->
       <div class="flex items-center justify-between">
         <!-- Flex Container For Logo/Menu -->
         <div class="flex items-center space-x-20">
           <!-- Logo -->
           <!-- <img src="images/logo.svg" alt="" /> -->
-          <h1 class="home text-2xl md:text-3xl py-2 px-2 my-2 mx-2 font-medium rounded-xl italic text-fuchsia-800 bg-slate-300">Jawale Product</h1>
+          <h1 class="home text-xl md:text-3xl py-2 px-2 my-2 mx-2 font-medium rounded-xl italic text-fuchsia-800 bg-slate-300">Jawale Product</h1>
           <!-- Left Menu -->
           <div class="hidden lg:flex space-x-8 font-bold">
             <a href="#features" class="text-gray hover:text-fuchsia-700 hover:bg-slate-200 py-2 px-2 my-2 mx-2 rounded-xl"
@@ -55,7 +62,10 @@
             >Contact Us</a
           >
         </div>
-
+         <div class="text-slate-800 bg-slate-100 p-2 rounded-xl font-semibold text-opacity-40 text-xs">
+          <div class="date"></div>
+          <div class="day text-center"></div>
+         </div>
         <!-- @todo Hamburger Menu -->
         <button
         id="menu-btn"
@@ -71,27 +81,26 @@
       <!-- @todo Mobile Menu -->
       <div
       id="menu"
-      class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100"
+      class="absolute hidden p-6 rounded-lg bg-darkViolet left-6 right-6 top-24 z-100"
     >
       <div
-        class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        class="flex flex-col items-center justify-center w-full space-y-8 font-bold text-white rounded-sm"
       >
         <a href="#features" class="w-full text-center  hover:text-fuchsia-500">Features</a>
         <a href="#product" class="product w-full text-center  hover:text-fuchsia-500">Products</a>
         <a href="#abt" class="w-full text-center hover:text-fuchsia-500">About</a>
        
      
-        <a href="tel:9766603565" class="w-full py-3 text-center rounded-full bg-cyan">
+        <a href="#cta" class="w-full py-3 text-center rounded-full bg-cyan">
           Contact Us
         </a>
+        
 
       </div>
       </div>
    </nav>
 
-
-
-    <!-- Hero Section -->
+   <!--2  Hero Section -->
     <section id="hero" class="md:pl-10 md:pr-10 border-b-2 border-b-slate-200 md:border-b-0">
       <!-- Hero Container -->
       <div class="container flex flex-col-reverse mx-auto p-6 lg:flex-row  pb-12">
@@ -117,25 +126,24 @@
           </div>
         </div>
         <!-- Image -->
-        <div class="images mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
-          <!-- <img src="images/papd.png" alt="" class="image1"/> -->
+        <div class="images mb-12 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+          <img src="images/bibde.jpg" alt="" class="image1"/>
         </div>
       </div>
     </section>
 
-   <!-- Product section -->
-   <section id="product" class="md:pl-10 md:pr-10 border-b-2 border-b-slate-200 md:border-b-0">
-    <div class="container mx-auto p-6 text-center">
-      <div class="mb-12 lg:mt-16 xl-mb-28 text-purple-700">
+   <!--3  Product section -->
+   <section id="product" class="prod md:pl-10 md:pr-10 border-b-2 border-b-slate-200 md:border-b-0 pt-10 md:pt-0">
+    <div class="container mx-auto p-2 md:p-6 text-center">
+      <div class="mb-10 lg:mt-12 xl-mb-28 text-purple-700 flex justify-between px-4" id="productsHeading">
         <h1
-          class="text-3xl font-bold text-center lg:text-4xl font-italic opacity-70"
+          class="text-3xl font-bold text-left md:text-center lg:text-4xl font-italic opacity-70"
         >
          PRODUCTS
         </h1>
-      
-        
-      </div>
-      <div class="px-4 md:px-12 mb-16 md:mb-0 md:pb-36 w-full mx-auto md:w-5/6">
+        <ion-icon name="remove-outline" class="text-3xl text-slate-900 tempCloseProducts md:hidden"></ion-icon>
+     </div>
+      <div class="prodContent md:px-12 mb-16 md:mb-0 md:pb-36 w-full mx-auto md:w-7/8">
         <div class="shadow overflow-hidden rounded border-b border-gray-200">
           <table class="min-w-full bg-white">
             <thead class="bg-gray-800 text-white">
@@ -234,27 +242,27 @@
     </div>
    </section>
 
-
-    <!-- Feature Box Section -->
-    <section id="features" class="pb-32 bg-gray-100 md:mt-0 border-b-2 border-b-slate-200 md:border-b-0">
-      <div class="py-12 text-purple-700">
+    <!--4 Feature Box Section -->
+    <section id="features" class="pb-0 md:pb-24 bg-gray-100 md:mt-0 border-b-2 border-b-slate-200 md:border-b-0">
+      <div class="py-12 text-purple-700 flex justify-between px-6 md:pl-20 md:pr-16">
         <h1
           class="text-3xl font-bold text-center lg:text-4xl font-italic opacity-70 "
         >
          FEATURES
         </h1>
-      
+        <ion-icon name="remove-outline" class="text-3xl text-slate-900 tempCloseFeatures md:hidden"></ion-icon>
+
         
       </div>
       <div
-        class="relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 pt-12"
+        class="featuresContent relative container flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7 pt-12"
       >
         <!-- Horizontal Line -->
         <div
-          class="hidden absolute top-24 w-10/12 left-16 h-3 bg-cyan md:block"
+          class="hidden absolute top-36 w-2/3 left-16 h-3 bg-cyan md:block"
         ></div>
         <!-- Vertical Line -->
-        <div class="absolute w-2 left-1/2 h-full -ml-1 bg-cyan md:hidden"></div>
+        <div class="absolute w-2 left-1/2 h-3/4 -ml-1 bg-cyan md:hidden"></div>
 
         <!-- Box 1 -->
         <div
@@ -327,34 +335,42 @@
       </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="abt" class="md:pl-10 md:pr-10 py-10 md:py-0 border-b-2 border-b-slate-200 md:border-b-0">
+    <!--5 About Us Section -->
+    <section id="abt" class="md:pl-10 md:pr-10 py-8 md:py-0 border-b-2 border-b-slate-200 md:border-b-0">
       <div class="container mx-auto">
         <!-- Content Container -->
-        <div class="space-y-10 mb-8 lg:mt-16  xl-mb-28 text-purple-700">
-          <h1
+        <div class="md:mb-16 lg:mt-16  xl-mb-28 text-purple-700">
+          <div class="pb-8 flex justify-between md:pl-8 md:pr-8 px-6">
+            <h1
             class="text-3xl font-bold text-center lg:text-4xl font-italic opacity-70"
           >
-           About Us
+           ABOUT US
           </h1>
-          <p
-            class="text-medium md:text-2xl text-center text-gray-400 lg:text-left px-4 md:px-0"
+          <ion-icon name="remove-outline" class="text-3xl text-slate-900 tempCloseAbout md:hidden"></ion-icon>
+
+          </div>
+          
+          
+          <div class="aboutContent">
+            <p
+            class="text-medium md:text-2xl text-left text-gray-400  px-4 md:px-0 w-full mx-auto md:w-11/12"
           >
             We are Delivering our service from past 12 years.
            
             Today, we're proud to be the good Home made product Maker.
           
-            we are delivering services in Jalgaon,Mumbai,pune & nashik - to our customers.
+            we are delivering services in Jalgaon, Mumbai, pune & nashik - to our customers.
          
           </p>
-          
+          </div>
         </div>
-        
+       
       </div>
       
   
     </section>
-    <!-- CTA Section -->
+    
+    <!--6 CTA Section -->
     <section id="cta" class="py-16 md:py-20 bg-darkViolet md:px-6 md:pl-10 md:pr-10">
       <div class="flex flex-col p-2 space-y-6">
         <h5
@@ -415,10 +431,6 @@
                   <img src="images/whatsapp.svg" alt="" class="ficon" />
                </a>
                 </li>
-              
-           
-          
-
           </ul>
         </div>
      </div>
@@ -426,16 +438,14 @@
      class="space-x-6 font-bold text-grayishViolet lg:flex flex items-center justify-center text-center pt-8"
    >
      <a
-       href="" 
+       href="#cta" 
        class="px-6 py-2 md:px-8 md:py-4 text-xl font-bold text-white bg-cyan hover:bg-slate-200 rounded-full hover:opacity-70 hover:text-slate-900"
        >Contact Us</a
      >
    </div>
     </section>
 
-
-
-    <!-- Footer section -->
+    <!--7 Footer section -->
     <footer class="py-4 pt-12 bg-veryDarkViolet md:px-6 md:pl-10 md:pr-10 relative">
       <div
         class="container flex flex-col items-center justify-between mx-auto space-y-12 md:flex-row md:space-y-0 md:items-start"
